@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "270383005325",
+    "project_id": "vitcl-c1904",
+    "storage_bucket": "vitcl-c1904.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270383005325:android:2c4a87602b5d252a5aecc4",
+        "android_client_info": {
+          "package_name": "com.example.vitcl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO_dpUI4kP1Mvh3Vy3zlZG0h-VIV3QGjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
