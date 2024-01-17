@@ -1,0 +1,32 @@
+{
+  "name": "vitcl",
+  "version": "1.0.0",
+  "description": "A new Flutter project.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kalki Eshwar D",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nexus-Labs-Dev/MyNotes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nexus-Labs-Dev/MyNotes/issues"
+  },
+  "homepage": "https://github.com/Nexus-Labs-Dev/MyNotes#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
