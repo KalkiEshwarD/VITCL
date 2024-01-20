@@ -1,7 +1,7 @@
 {
   "name": "vitcl",
   "version": "1.0.0",
-  "description": "A new Flutter project.",
+  "description": "Platform for VIT Chess League",
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -15,12 +15,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nexus-Labs-Dev/MyNotes.git"
+    "url": "git+https://github.com/KalkiEshwarD/VITCL.git"
   },
   "bugs": {
-    "url": "https://github.com/Nexus-Labs-Dev/MyNotes/issues"
+    "url": "https://github.com/KalkiEshwarD/VITCL/issues"
   },
-  "homepage": "https://github.com/Nexus-Labs-Dev/MyNotes#readme",
+  "homepage": "https://github.com/KalkiEshwarD/VITCL#readme",
   "dependencies": {
     "express": "^4.18.2",
     "mongodb": "^6.3.0",
