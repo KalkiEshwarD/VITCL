@@ -1,87 +1,66 @@
 import 'package:isar/isar.dart';
 
-// part 'app_users.g.dart';
+part 'app_users.g.dart';
 
-abstract class AppUser {
-  late String userName;
-  late String email;
+enum UserType {
+  spectatorUser,
+  playerUser,
+  captainUser,
+  hostUser,
 }
 
 @collection
-class SpectatorUser implements AppUser {
-  @override
+class AppUser {
   late String userName;
-  @override
   late String email;
 
-  SpectatorUser({
-    required this.userName,
-    required this.email,
-  });
-}
+  late String? lichessID;
+  late String? phoneNumber;
 
-@collection
-class PlayerUser implements AppUser {
-  late String lichessID;
-  late String phoneNumber;
+  late int? blitzRating;
+  late int? bulletRating;
+  late int? blitzRank;
+  late int? bulletRank;
+  late int? overallRank;
 
-  late int blitzRating;
-  late int bulletRating;
-  late int blitzRank;
-  late int bulletRank;
-  late int overallRank;
+  late String? teamName;
+
+  @enumerated
+  late UserType userType;
 
   Id id = Isar.autoIncrement;
 
-  @override
-  String email;
+  // Spectator user
+  AppUser({
+    required this.userName,
+    required this.email,
+  }) {
+    userType = UserType.spectatorUser;
+  }
 
-  @override
-  String userName;
-
-  PlayerUser({
+  // Player user
+  AppUser.playerUser({
     required this.userName,
     required this.email,
     required this.lichessID,
     required this.phoneNumber,
+    userType = UserType.playerUser,
   });
-}
 
-@collection
-class CaptainUser implements AppUser {
-  late String lichessID;
-  late String phoneNumber;
-
-  late String teamName;
-
-  @override
-  late String email;
-
-  @override
-  late String userName;
-
-  late int blitzRating;
-  late int bulletRating;
-  late int blitzRank;
-  late int bulletRank;
-  late int overallRank;
-
-  CaptainUser({
+  // Captain user
+  AppUser.captainUser({
     required this.userName,
     required this.email,
     required this.lichessID,
     required this.phoneNumber,
     required this.teamName,
+    userType = UserType.captainUser,
   });
-}
 
-@collection
-class HostUser extends SpectatorUser {
-  late String phoneNumber;
-
-  HostUser({
-    required super.userName,
-    required super.email,
-    required this.phoneNumber,
+  // Host user
+  AppUser.hostUser({
+    required this.userName,
+    required this.email,
+    userType = UserType.hostUser,
   });
 }

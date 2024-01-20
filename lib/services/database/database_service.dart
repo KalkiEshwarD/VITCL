@@ -8,9 +8,20 @@ class NoSQLDatabaseService implements NoSQLDatabaseProvider {
   Future<void> initializeDatabase() => provider.initializeDatabase();
 
   @override
-  Future<void> userSignUp({
-    required String email,
-    bool isVerified = false,
-  }) async =>
-      provider.userSignUp(email: email, isVerified: isVerified);
+  Future<void> closeDB() {
+    // TODO: implement closeDB
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> initializeDB() {
+    // TODO: implement initializeDB
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> openDB() {
+    // TODO: implement openDB
+    throw UnimplementedError();
+  }
 }
